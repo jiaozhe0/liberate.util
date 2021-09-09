@@ -1,0 +1,9 @@
+**/*.svg
+dist/
+yarn.lock
+package-lock.json
+.editorconfig
+.eslintignore
+.prettierignore
+.png
+.prettierrc

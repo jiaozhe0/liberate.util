@@ -1,0 +1,39 @@
+{
+  "name": "jz-util",
+  "version": "1.0.0",
+  "description": "js javascript util",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./build/build.js"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "jiaozhe",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "json-templater": "^1.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
