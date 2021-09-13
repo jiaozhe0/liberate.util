@@ -1,1 +1,11 @@
-{"getUrlParam":"src/getUrlParam.js","loadImageAsync":"src/loadImageAsync.js","supportWebp":"src/supportWebp.js","debounce":"src/debounce.js","throttle":"src/throttle.js"}
+{
+  "getUrlParam": "src/getUrlParam.js",
+  "loadImageAsync": "src/loadImageAsync.js",
+  "supportWebp": "src/supportWebp.js",
+  "debounce": "src/debounce.js",
+  "throttle": "src/throttle.js",
+  "_env": "src/_env.js",
+  "_type": "src/_type.js",
+  "keepRun": "src/keepRun.js",
+  "Storage": "src/storage.js"
+}

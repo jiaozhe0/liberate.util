@@ -13,6 +13,7 @@ module.exports = {
     'array-callback-return': 'off',
     'consistent-return': 'off',
     'import/prefer-default-export': 'off',
-    'func-names': 'off'
+    'func-names': 'off',
+    'no-restricted-globals': 'off'
   }
 }
