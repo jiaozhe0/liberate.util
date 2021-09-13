@@ -10,10 +10,15 @@ function keepRun(count, list, action, limit = 3) {
   return new Promise((resolve) => {
     const temList = list.slice()
     const retryMap = {}
+    const successList = []
+    const failList = []
     let running = 0
     function finished() {
       if (running > 0 || temList.length > 0) return
-      resolve()
+      resolve({
+        failList,
+        successList
+      })
     }
     function handleEmitter() {
       while (running < count && temList.length) {
@@ -27,6 +32,7 @@ function keepRun(count, list, action, limit = 3) {
       // eslint-disable-next-line no-plusplus
       retryMap[item.id] = retryItem++
       if (retryItem >= limit) {
+        failList.push(item)
         finished()
       } else {
         temList.push(item)
@@ -37,6 +43,7 @@ function keepRun(count, list, action, limit = 3) {
       action(item)
         .then(() => {
           running -= 1
+          successList.push(item)
           finished()
           handleEmitter()
         })

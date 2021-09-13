@@ -8,9 +8,9 @@ const IMPORT_TEMPLATE = "export {{name}} from './src/{{package}}'"
 const toolFnData = fs.readJsonSync(toolFnPath)
 
 const toolLine = Object.keys(toolFnData).map((name) => {
-  if (name.indexOf('_') > 0) {
+  if (name.indexOf('_') === 0) {
     return render(IMPORT_TEMPLATE, {
-      name: `*`,
+      name: '*',
       package: name
     })
   }

@@ -6,7 +6,7 @@
   "module": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./build/build.js",
+    "build": "node ./build/build.js && git add .",
     "pub": "sh pub.sh"
   },
   "keywords": [
