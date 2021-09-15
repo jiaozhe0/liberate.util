@@ -4,6 +4,7 @@
   "description": "js javascript util",
   "main": "main.js",
   "module": "main.js",
+  "homepage": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./build/build.js && git add .",

@@ -7,5 +7,5 @@
   "_env": "src/_env.js",
   "_type": "src/_type.js",
   "keepRun": "src/keepRun.js",
-  "Storage": "src/storage.js"
+  "Storage": "src/Storage.js"
 }
